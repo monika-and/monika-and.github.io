@@ -11,9 +11,9 @@
     <form action="https://formspree.io/monica.andrzejewska@gmail.com"
       method="POST">
        <label for="imie">Imię</label><br />
-        <input type=text name="imie" id="imie"><br />
+        <input type="text" name="imie" id="imie"><br />
         <label for="nazwisko">Nazwisko</label><br />
-        <input type=text name="nazwisko" id="nazwisko"><br />
+        <input type="text" name="nazwisko" id="nazwisko"><br />
         <label for="email">Email</label><br />
         <input type="email" name="email" id="email"><br />
         <label for="tel">Telefon</label><br />
@@ -27,14 +27,15 @@
         </select><br />
        <br />
        <p>Płeć:</p>
-       <input type="radio" name="gender" value="Facet" id="man"><label for="man">Mężczyzna</label>
-        <input type="radio" name="gender" value="kobieta" id="woman"><label for="woman"> Kobieta</label>
-        <label><input type="radio" name="gender" value ="nieokreslona">Inna</label>
+       <input type="radio" name="gender" value="Facet" id="man"><label for="man">Mężczyzna</label><br />
+        <input type="radio" name="gender" value="kobieta" id="woman"><label for="woman"> Kobieta</label><br />
+        <br />
         <br />
         
-        <input type="checkbox" value="zgoda-wyrazona" name="zgoda-wyrazona" id="agreement"><label for="agreement">Wyrażam zgodę na sprzedaż moich danych osobowych</label>
-        <br />
         <textarea>Wiadomość</textarea><br />
+        <input type="checkbox" value="zgoda-wyrazona" name="zgoda-wyrazona" id="agreement"><label for="agreement">Wyrażam zgodę na przetwarzanie moich danych osobowych</label>
+        <br />
+        
         <button type="submit">Wyślij</button>
     </form>
 </body>
