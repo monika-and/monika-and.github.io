@@ -2,9 +2,11 @@
     box-sizing: border-box;
 }
 
-.main {
-    height: 100vh;
+body {
+    margin: 0;
+    width: 100%;
 }
+
 
 header#main-header {
 background-image: url(../img/man-1.jpg);
@@ -40,21 +42,70 @@ header#main-header h1 {
     padding: 40px;
 }
 
-@media (max-height: 1170px) {
-    #main header {
-        text-align: right;
-        vertical-align: top;
+
+@media (max-width: 1170px) {
+    #main-header {
         background-image: url(../img/man-2.jpg);
         background-position: center;
-        height: 70vh;
+        background-size: cover;
+        height: 70%;
+        font-size: 15px;
     }
+    
+    header#main-header h2 {
+    position: absolute;
+    text-align: right;
+    font-weight: 400;
+    left: 0;
+    right: 250px;
+    top: 18%;
+    padding: 30px;
+    }
+    
+    header#main-header h1 {
+    position: absolute;
+    text-align: right;
+    font-weight: 700;
+    left: 0;
+    right: 0;
+    top: 24%;
+    padding: 35px;
+    }
+
 }
     
 
-@media (max-height: 992px) {
-    #main header {
+@media (max-width: 992px) {
+    #main-header {
         height: 50vh;
-        text-align: center;
+        background-image: url(../img/man-1.jpg);
+        background-position: center;
+        background-size: cover;
+        font-size: 15px;
+        
     }
+    
+    header#main-header h2 {
+    position: absolute;
+    text-align: center;
+    font-weight: 400;
+    left: 0;
+    right: 0;
+    top: 105%;
+    padding: 20px;
+    color: black;
+    }
+    
+    header#main-header h1 {
+    position: absolute;
+    text-align: center;
+    font-weight: 700;
+    left: 0;
+    right: 0;
+    top: 115%;
+    padding: 20px;
+    color: black;    
+    }
+
 }
  
