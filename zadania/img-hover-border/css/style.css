@@ -1,0 +1,67 @@
+.container {
+    background-image: url(../4-jezioro.jpg);
+    background-size: cover;
+    width: 850px;
+    height: 410px;
+    margin: 0 0 25% 25%;
+    position: relative;
+}
+
+
+.header { /*musi być newidoczny */
+    color: #fff;
+    font-size: 2em;
+    transform: translate(0%, 350%);
+    background-color: rgba(0,0,0, 0.8);
+    background-size: 50%;
+    text-align: center;
+    opacity: 0.4;
+}
+
+.header:hover {
+   opacity: 1;
+    transition: 3s;
+    transition-timing-function: linear;
+}
+
+.curtain {
+    position: absolute;
+    left: -12px;
+    margin: 5px;
+    border: 3px solid black;
+    width: 860px;
+    height: 210px;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+.top {
+    animation-name: top-down;
+    bottom: 25vh;
+    border-bottom: 0px;
+}
+
+.bottom {
+    animation-name: bottom-up;
+    top: 25vh;
+    border-top: 0px;
+}
+
+
+@keyframes bottom-up {
+    0% {
+        top: 50vh;
+    }
+    100% {
+        top: 25vh;
+    }
+}
+
+@keyframes top-down {
+    0% {
+        bottom: 50vh;
+    }
+    100% {
+        bottom: 25vh;
+    }
+}
